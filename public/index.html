@@ -5,17 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-        function hamburgerMenu() {
-    var element = document.getElementById("navigation");
-    if (element.className === "navbar") {
-        element.className += " responsive";
-    } else {
-        element.className = "navbar";
-    }
-  }
-    </script>
+    <script src="script.js"></script>
 
 </head>
 
@@ -65,13 +57,10 @@
             <div class="skill1">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_6aQ6YnZ7QNq_sbLMvCmL6gUliaPwtPcIjQ&s">
                 <h5>R</h5>
-            </div>
-                
-                
-                
-                
+            </div>      
             
         </section>
+        
         <section id="proj" class="project">
             <h1>Projects</h1>
             <div class="project1">
@@ -88,7 +77,7 @@
                 <p> Created to control volume using Hand Gestures in the computer. The
                     setup consists of a single camera to capture the gesture and we use OpenCV module to recognize the
                     gestures.
-                    Tech Tools: Python, Open CV</p>
+                    </p>
 
             </div>
         </section>
@@ -104,7 +93,7 @@
                         3.72/4.0</p>
                 </span>
                 <span class="img2">
-                    <img src="https://vishnu.edu.in/images/Vishnu_Logo.png">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-p8wYqydbp5hEU4Iquhbhub3HeIsmWHKNUg&s">
                 </span>
                 <span class="edu2">
                     <h3>Undergraduation</h3>
@@ -114,8 +103,7 @@
             </div>
         </section>
         <section id="exp" class="experience">
-            <h1><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSggLr4Ab9BMjJ9j4eCRG5Y8D0PzpNd6tHieg&s">Experience
+            <h1>Experience
             </h1>
             <div class="experience1">
                 <h3>Family Fun Magazine, Assistant editor internship</h3>
@@ -175,362 +163,6 @@
                     src="https://static.vecteezy.com/system/resources/previews/020/964/377/non_2x/gmail-mail-icon-for-web-design-free-png.png"></a>
         </footer>
     </div>
-    <style>
-        
-.container{
-    display: grid;
-    height: 100vh;
-    gap:0.5rem;
-    grid-template-columns:0.7fr 0.5fr 1.8fr 1fr 1fr 1fr ;
-    grid-template-rows:0.5fr 1fr 1fr 1fr 1fr 0.2fr  ;
-    grid-template-areas:
-    "header header header header header header" 
-    "profile profile about about about about"
-    "profile profile skills skills skills skills"
-    "proj proj proj proj proj proj"
-    "edu edu edu exp exp exp"
-    "blog blog blog certi certi certi"
-    "footer footer footer footer footer footer"
-    ;
-    
-    }
-
-header {
-        background-color: #08519c;
-        grid-area: header;
-        text-align: center;
-    }
-  
-  header a {
-    display: block;
-    font-family: Arial;  
-    font-size: 18px; 
-    float: left;         
-    color:#ffffff;            
-    grid-area: header;
-    text-decoration: none; 
-    text-align: center;
-    padding: 20px 70px;
-  }
-  header a.icon{
-    display: none;
-  }
-  header a:hover {
-    background-color: pink;
-    color: black;
-  }
-#profile {
-    grid-area: profile; 
-    border: 2px solid black;  
-    text-align: center; 
-    background-color: #6098c0;
-   
-  }
-  .home h1 {
-    font-size: 25px;
-    color: #0f0344;
-    text-align: center;
-  }
-  .home img {
-    width: 80%; 
- 
-  }
-#about {
-    grid-area: about;
-    border: 2px solid rgb(22, 20, 20);  
-    background-color:  #6baed6;
-  }
-  .demo h1 {
-    color: black;
-    margin-left: 10px;
-    font-size: 30px;
-    margin-top: 5px;
-    text-align: justify;
-  }
-  .demo p{
-    color: black;
-    text-align: justify;
-    font-weight: 200;
-    margin-left: 20px;
-    margin-top: -15px;
-    margin-right: 5px;
-  
-  }
-#skills {
-    grid-area: skills;
-    background-color: #6baed6; 
-    border: 2px solid black; 
-  }
-  .skills h1 {
-    color: black;
-    font-size: 30px;
-      text-align: left;
-      margin-bottom: 20px;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
-  .skill1{
-    margin-top: -30px;
-    margin-left: 100px;
-    
-    display: inline-block;
-  }
-  .skill1 img{
-    width: 80px;
-height: 80px;
-  }
-  .skill1 h5{
-    margin-left: 15px;
-    margin-top: 10px;
-    font-size: 20px;
-  }
-.project{
-  color: black;
-  grid-area: proj;
-  box-sizing: border-box; 
-  border: 2px solid rgb(22, 20, 20);
-  background-color: #9ecae1;
-}
-.project h1{
-  text-align: left;
-  font-size: 30px;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-}
-.project1 {
-  padding: 2px;
-  width: 600px; 
-  height: 250px; 
-  margin: 20px;
-  float: left; 
-  background-color:#d5e5f0;
-}
-.project1 img{
-  width: 200px; 
-  height: 120px;
-  margin-top: 10px; 
-  margin-left: 250px;
-  margin-bottom:3px;
-}
-.projimg img{
-  width: 150px;
-  height:120px;
-}
-.project1 h3 {
-  margin-left: 90px;
-  margin-top: 0px;
-  margin-bottom: -10px;
-
-}
-.project1 p{
-  margin-right: 70px;
-  margin-left: 80px;
-  margin-bottom: -10px;
-} 
-#edu{
-  grid-area: edu;
-  padding: 10px; 
-  color: black;
-  box-sizing: border-box; 
-  border: 2px solid rgb(22, 20, 20);
-  background-color: #d4e8fc;
-}
-.education h1{
-  font-size: 30px;
-  text-align: left;
-  margin-top: 0px;
-}
-.education img{
-  margin-top: 5px; 
-  margin-left: 10px;
-width: 90px;
-height: 90px;
-}
-
-.edu1{
-  display: inline-block;
-  width: 70%;
-  height: 30%;
-  padding: 5px;
-  border: 0px solid black; 
-  background-color: #a0c2da;
-  margin-left: 20px;  
-  margin-bottom: 20px; 
-}
-.edu2{
-  display: inline-block;
-  width: 70%;
-  height: 30%;
-  padding: 5px;
-  border: 0px solid black; 
-  background-color: #a0c2da;
-  margin-left: 20px;   
-}
-.education1 h3{
-margin-top: 10px;
-margin-bottom: -10px;
-}
-
-#exp{
-grid-area: exp; 
-color: black;
-box-sizing: border-box; 
-border: 2px solid rgb(22, 20, 20);
-background-color: #d4e8fc;
-float: left;
-}
-.experience h1{
-  text-align: left;
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 0px;
-}
-.experience1{
-width: 300px;
-height:250px;
-padding: 10px; 
-background-color: #78aacc;
-box-sizing: border-box; 
-margin-right: 1px; 
-margin-top: 0px;
-margin-bottom: 10px;
-margin-left:20px;
-float: left;
-text-align: left;
-}
-.experience img{
-width: 50px;
-height: 50px;
-margin-left: 20px;
-
-}
-#blog{
-grid-area: blog;
-padding: 10px; 
-color: black;
-box-sizing: border-box; 
-border: 2px solid rgb(22, 20, 20);
-background-color:#9ecae1;
-float: left;
-}
-.blog1{
-  display: inline-block;
-width: 260px;
-height:130px;
-padding: 0px; 
-box-sizing: border-box;
-margin-left:50px;
-
-
-}
-.blog1 img{
-  width: 100px;
-  height: 100px;
-}
-.blogs h1{
-  font-size: 30px;
-  text-align: left;
-
-  margin-top: 0px;
-}
-.blog1 p{
-margin-right: 10px;
-margin-top: -15px;
-}
-.blog1 h3{
-    margin-right: 10px;
-    margin-top: 10px;
-  }
-#certi{
-grid-area: certi;
-padding: 10px;
-color: black; 
-box-sizing: border-box; 
-border: 2px solid rgb(22, 20, 20);
-background-color: #9ecae1;
-float: left;
-}
-.certification h1{
-  font-size: 30px;
-  text-align: left;
-  margin-bottom: 0px;
-  margin-top: 5px;
-}
-.certi1{
-  width: 250px;
-  height:200px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  display: inline-block;
-  
-}
-footer{
-    grid-area: footer;
-  background-color: #053444;
-  text-align: center;
-}
-a img{             
-    width:30px;
-    height: 30px;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-@media only screen and (max-width:500px){
-    .container{
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "header"
-        "profile"
-         "about"
-         "skills"
-         "proj"
-         "edu"
-         "exp"
-         "blog"
-         "certi"
-         "footer";
-         
-         height:100vh;
-         color:white;
-         gap:0.5rem;
-    }
-    header{
-      height:auto;
-      grid-area: header;
-  }
-  .home img{
-     width: 200px;
-     height:200px;
-  }
-  .navbar a{
-      display:none;
-  }
-  .navbar a.icon{
-      float: right;
-      display: block;
-  }
-  .navbar.responsive {
-      position: relative;
-  }
-
-  .navbar.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-  }
-
-  .navbar.responsive a {
-      display: block;
-      text-align:left;
-      font-size:15px;
-      
-  }
-    
-}
-    </style>
 </body>
 
 </html>
